@@ -96,3 +96,67 @@ Starts the application, loads context, initializes beans, and starts embedded se
 
 30. How to connect to a database?
 Configure spring.datasource.url, username, password, and JPA properties.
+
+Part 2
+
+31. What is the difference between @ComponentScan and @Component?
+@ComponentScan → tells Spring where to search for beans.
+@Component → marks a class as a Spring bean.
+
+32. What is the purpose of @Bean?
+Manually declare a bean in a @Configuration class.
+
+33. What is Spring Boot Starter Test?
+A testing starter providing JUnit, Mockito, Spring Test, JsonPath, etc.
+
+34. How to enable asynchronous methods?
+Use @EnableAsync + @Async.
+
+35. What is @Transactional?
+Ensures a method runs inside a database transaction.
+
+36. What is the difference between @PathVariable and @RequestParam?
+@PathVariable → part of URI.
+@RequestParam → query parameters.
+
+37. What is the use of ModelMapper or MapStruct?
+For mapping DTOs to entities and vice-versa.
+
+38. What is H2 Database?
+In-memory database commonly used for local development and testing.
+
+39. What is the purpose of application.yml?
+Same as application.properties but allows hierarchical YAML structure.
+
+40. What is Flyway or Liquibase?
+Database migration tools used to version and manage DB schema.
+
+41. What is @Value annotation?
+Injects values from properties/yaml into variables.
+
+42. What is Spring Cloud Config?
+Externalized configuration stored in Git, server used to serve configs to multiple services.
+
+43. What is Feign Client?
+A declarative HTTP client used in microservices to call other services easily.
+
+44. What is RestTemplate?
+Traditional Spring client to make HTTP calls (now replaced by WebClient).
+
+45. What is WebClient?
+Reactive, non-blocking HTTP client used in Spring WebFlux and modern apps.
+
+46. What is the purpose of @EnableEurekaClient?
+Registers the service with Eureka service discovery.
+
+47. What is Resilience4j?
+Library for circuit breaker, retry, rate limiting, bulkhead patterns.
+
+48. How to configure logging?
+Using application.properties or logback-spring.xml.
+
+49. What is Actuator's /health endpoint used for?
+To check if the application is running — used by load balancers and Kubernetes.
+
+50. What is a fat JAR in Spring Boot?
+A self-contained jar that includes application + all dependencies + embedded server.
