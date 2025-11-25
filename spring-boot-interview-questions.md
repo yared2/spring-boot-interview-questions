@@ -1,4 +1,5 @@
-**Part 1**
+Part 1
+
 1. What is Spring Boot?
 A framework that simplifies Spring development using auto-configuration, embedded servers, and starter dependencies.
 
@@ -98,7 +99,7 @@ Starts the application, loads context, initializes beans, and starts embedded se
 30. How to connect to a database?
 Configure spring.datasource.url, username, password, and JPA properties.
 
-**Part 2**
+Part 2
 
 31. What is the difference between @ComponentScan and @Component?
 @ComponentScan → tells Spring where to search for beans.
@@ -136,7 +137,7 @@ Database migration tools used to version and manage DB schema.
 Injects values from properties/yaml into variables.
 
 42. What is Spring Cloud Config?
-Externalized configuration stored in Git, server used to serve configs to multiple services.
+Externalized configuration stored in Git, served to multiple services.
 
 43. What is Feign Client?
 A declarative HTTP client used in microservices to call other services easily.
@@ -151,7 +152,7 @@ Reactive, non-blocking HTTP client used in Spring WebFlux and modern apps.
 Registers the service with Eureka service discovery.
 
 47. What is Resilience4j?
-Library for circuit breaker, retry, rate limiting, bulkhead patterns.
+Library for circuit breaker, retry, rate limiting, and bulkhead patterns.
 
 48. How to configure logging?
 Using application.properties or logback-spring.xml.
@@ -163,36 +164,34 @@ To check if the application is running — used by load balancers and Kubernetes
 A self-contained jar that includes application + all dependencies + embedded server.
 
 51. What is a microservice in Spring Boot?
-A small, independent service owning one business function, built using Spring Boot.
+A small, independent service owning one business capability.
 
 52. What is the difference between Monolithic and Microservices architecture?
-Monolithic → One big application.
-Microservices → Many small, independent services communicating via REST/Kafka.
+Monolithic → One large application.
+Microservices → Many small independent services communicating via REST/Kafka.
 
 53. What is load balancing in Spring Cloud?
-Distributing requests across multiple service instances using Ribbon, Spring Cloud LoadBalancer, or Gateway.
+Distributing requests across service instances using Ribbon, Spring Cloud LoadBalancer, or Gateway.
 
 54. What is Swagger/OpenAPI?
-Tool to generate API documentation and interactive UI for testing endpoints.
+Tool to generate API documentation and provide an interactive UI.
 
 55. How do you enable Swagger in Spring Boot?
 Add springdoc-openapi dependency and access /swagger-ui.html.
 
 56. What is CORS and how to enable it?
-Cross-Origin Resource Sharing — allows frontend apps to call APIs.
+Cross-Origin Resource Sharing.
 Enable using @CrossOrigin.
 
 57. What is Multipart in Spring Boot?
-File upload handling done using MultipartFile.
+File upload handling using MultipartFile.
 
 58. What is the difference between @RequestBody and @ResponseBody?
-@RequestBody → Convert JSON → Java object
-@ResponseBody → Convert Java → JSON
+@RequestBody → JSON → Java
+@ResponseBody → Java → JSON
 
 59. What is an interceptor in Spring Boot?
-A component used to intercept requests before they reach the controller (logging, auth, etc.).
+Used to intercept requests before they hit controllers (logging, auth).
 
 60. What is a filter in Spring Boot?
-A Servlet-based component used for request/response processing at a lower level (security, logging).
-
-**Part 3**
+A Servlet-based component for lower-level request/response processing.
