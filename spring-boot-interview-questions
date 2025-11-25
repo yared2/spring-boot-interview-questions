@@ -160,3 +160,36 @@ To check if the application is running — used by load balancers and Kubernetes
 
 50. What is a fat JAR in Spring Boot?
 A self-contained jar that includes application + all dependencies + embedded server.
+
+51. What is a microservice in Spring Boot?
+A small, independent service owning one business function, built using Spring Boot.
+
+52. What is the difference between Monolithic and Microservices architecture?
+Monolithic → One big application.
+Microservices → Many small, independent services communicating via REST/Kafka.
+
+53. What is load balancing in Spring Cloud?
+Distributing requests across multiple service instances using Ribbon, Spring Cloud LoadBalancer, or Gateway.
+
+54. What is Swagger/OpenAPI?
+Tool to generate API documentation and interactive UI for testing endpoints.
+
+55. How do you enable Swagger in Spring Boot?
+Add springdoc-openapi dependency and access /swagger-ui.html.
+
+56. What is CORS and how to enable it?
+Cross-Origin Resource Sharing — allows frontend apps to call APIs.
+Enable using @CrossOrigin.
+
+57. What is Multipart in Spring Boot?
+File upload handling done using MultipartFile.
+
+58. What is the difference between @RequestBody and @ResponseBody?
+@RequestBody → Convert JSON → Java object
+@ResponseBody → Convert Java → JSON
+
+59. What is an interceptor in Spring Boot?
+A component used to intercept requests before they reach the controller (logging, auth, etc.).
+
+60. What is a filter in Spring Boot?
+A Servlet-based component used for request/response processing at a lower level (security, logging).
