@@ -1,1 +1,98 @@
-1,
+1. What is Spring Boot?
+A framework that simplifies Spring development using auto-configuration, embedded servers, and starter dependencies.
+
+2. Why use Spring Boot?
+Fast development, minimal configuration, embedded Tomcat/Jetty, auto-config, and starter dependencies.
+
+3. What is auto-configuration?
+Spring Boot automatically configures beans based on classpath and properties.
+
+4. What are Spring Boot Starters?
+Predefined dependencies that reduce manual version management.
+Example: spring-boot-starter-web, spring-boot-starter-data-jpa.
+
+5. Difference between Spring and Spring Boot?
+Spring → Requires manual config.
+Spring Boot → Auto-config + embedded server + starters.
+
+6. What is Spring Boot Actuator?
+Provides production-ready endpoints like /health, /metrics, /info.
+
+7. How to enable Actuator?
+Add dependency: spring-boot-starter-actuator.
+
+8. What is Spring Boot CLI?
+Command-line tool to run Groovy scripts quickly.
+
+9. What is Spring Initializr?
+Online generator to create Spring Boot project structures.
+
+10. What is @SpringBootApplication?
+Meta-annotation combining @Configuration, @EnableAutoConfiguration, @ComponentScan.
+
+11. What is @RestController?
+Combines @Controller + @ResponseBody to return JSON directly.
+
+12. How do you create a REST API?
+Use @RestController + @GetMapping / @PostMapping.
+
+13. What is @RequestMapping?
+Maps HTTP requests to methods.
+
+14. Difference between @GetMapping and @PostMapping?
+@GetMapping → Read data
+@PostMapping → Create data
+
+15. Purpose of application.properties?
+Externalized configuration: DB, port, logging, etc.
+
+16. How to change server port?
+server.port=8081
+
+17. Difference between JPA and Hibernate?
+JPA → Specification
+Hibernate → Implementation of JPA
+
+18. What is an embedded server?
+Built-in Tomcat/Jetty that runs inside the application. No external server needed.
+
+19. How do you handle exceptions?
+Use @RestControllerAdvice and @ExceptionHandler.
+
+20. What is Spring Boot DevTools?
+Provides auto-restart and live reload during development.
+
+21. What is Spring Security?
+Framework for authentication and authorization.
+
+22. What are Spring Profiles?
+Environment-specific configs (dev, test, prod).
+Activate using: spring.profiles.active=dev
+
+23. What is caching in Spring Boot?
+Use @EnableCaching, @Cacheable, @CacheEvict to store method results.
+
+24. How to schedule tasks?
+Use @EnableScheduling + @Scheduled.
+
+25. What is CommandLineRunner?
+Runs code immediately after startup.
+
+26. Difference between @Component, @Service, @Repository?
+All are beans but used for semantic roles:
+@Component → generic
+@Service → business logic
+@Repository → DB layer + exception translation
+
+27. How to run Spring Boot as a JAR?
+Build: mvn clean install
+Run: java -jar app.jar
+
+28. What is @ConfigurationProperties?
+Binds external config into POJO.
+
+29. What is SpringApplication.run()?
+Starts the application, loads context, initializes beans, and starts embedded server.
+
+30. How to connect to a database?
+Configure spring.datasource.url, username, password, and JPA properties.
