@@ -1,3 +1,4 @@
+**Part 1**
 1. What is Spring Boot?
 A framework that simplifies Spring development using auto-configuration, embedded servers, and starter dependencies.
 
@@ -97,7 +98,7 @@ Starts the application, loads context, initializes beans, and starts embedded se
 30. How to connect to a database?
 Configure spring.datasource.url, username, password, and JPA properties.
 
-Part 2
+**Part 2**
 
 31. What is the difference between @ComponentScan and @Component?
 @ComponentScan → tells Spring where to search for beans.
@@ -193,3 +194,5 @@ A component used to intercept requests before they reach the controller (logging
 
 60. What is a filter in Spring Boot?
 A Servlet-based component used for request/response processing at a lower level (security, logging).
+
+**Part 3**
